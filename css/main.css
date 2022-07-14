@@ -1,12 +1,6 @@
 /* VARIABLES */
 
-:root{
-  /* --main-text-color : #fff; */
-  /* --main-bg-color : #fff; */
-  /* --main-font-size : 16px; */
-  /* --main-font-weight : 400; */
-  /* --main-line-height : 1.5; */
-}
+
 
 /* GENERAL */
 *{
@@ -50,7 +44,7 @@ body{
 /* CONTAINER */
 
 .container{
-  /* max-width: your-size-here; */
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -61,5 +55,96 @@ body{
 .site-main{
   flex-grow: 1;
 }
-
-
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 18px;
+  margin-left: 150px;
+  /* grid-auto-rows: 200px; */
+  /* width: 900px; */
+}
+.wrapper__item{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+.wrapper__item--one{
+  background-image: url(../images/aziz.jpg);
+}
+/* .wrapper__item:hover{
+  position: relative;
+  z-index: 2;
+  width: 300px;
+  height: 200px;
+  transition: 1s;
+  transform: translateY(0px)  translateX(-40px);
+  box-shadow: 0px 0px 5px 3px black;
+} */
+.wrapper__box{
+  display: none;
+}
+/* .wrapper__item:hover .wrapper__box{
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 92px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.644);
+} */
+.wrapper__item--two{
+  background-image: url(../images/photo-1.jpg);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column: 2;
+  height: 100%;
+}
+.wrapper__item--three{
+  background-image: url(../images/photo-2.jpg);
+}
+.wrapper__item--four{
+  background-image: url(../images/photo-3.jpg);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column: 1;
+  height: 100%;
+}
+.wrapper__item--five{
+  background-image: url(../images/zamonaviy-brand.jpg);
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  /* height: 100%; */
+}
+.wrapper__item--six{
+  background-image: url(../images/zamonaviy-brand.jpg);
+  grid-column: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  height: 100%;
+}
+.wrapper__item--seven{
+  background-image: url(../images/photo-5.jpg);
+  grid-column: 1;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  height: 100%;
+  
+}
+.wrapper__item--eight{
+  background-image: url(../images/photo-6.jpg);
+  grid-column: 2;
+    grid-row-start: 5;
+    grid-row-end: 7;
+    height: 100%;
+}
+.wrapper__item--nine{
+  background-image: url(../images/ziyo.jpg);
+  grid-column: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
